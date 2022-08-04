@@ -1,453 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="7" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="0.189217">
-    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario" time="0.165873">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given user is already on login page.........................................skipped
-When title is "Login - My Store"............................................skipped
-Then user enters "kpatel@thebrick.com" and "2098found"......................skipped
-Then user clicks on signIn button...........................................skipped
-Then user is on home page...................................................skipped
-Then user quit..............................................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="132.399345">
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario" time="21.076735">
+        <system-out><![CDATA[Given user is already on login page.........................................passed
+When title is "Login - My Store"............................................passed
+Then user enters "kpatel@thebrick.com" and "2098found"......................passed
+Then user clicks on signIn button...........................................passed
+Then user is on home page...................................................passed
+Then user quit..............................................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario 2" time="0.005717">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given user is already on login page.........................................skipped
-When title is "Login - My Store"............................................skipped
-Then user enters "rj123@gmail.com" and "rj123"..............................skipped
-Then user clicks on signIn button...........................................skipped
-Then user is on home page...................................................skipped
-Then user quit..............................................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario 2" time="17.856818">
+        <system-out><![CDATA[Given user is already on login page.........................................passed
+When title is "Login - My Store"............................................passed
+Then user enters "rj123@gmail.com" and "rj123"..............................passed
+Then user clicks on signIn button...........................................passed
+Then user is on home page...................................................passed
+Then user quit..............................................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Automation LoginMap Feature" name="Automation LoginMap Test Scenario" time="0.004282">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given Mapuser is already on login page......................................skipped
-When Maptitle is "Login - My Store".........................................skipped
-Then Mapuser enters username and passsword..................................skipped
+    <testcase classname="Automation LoginMap Feature" name="Automation LoginMap Test Scenario" time="35.946494">
+        <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign out&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'krupals-MacBook-Air.local', ip: 'fe80:0:0:0:40:aec7:e058:b083%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 17.7.0, moz:processID: 16823, moz:profile: /var/folders/p8/fwvt8hpx36d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f04ac45a-746e-4043-b199-4f36f166caf4&#10;*** Element info: {Using=link text, value=Sign out}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)&#10;&#9;at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at StepDefinations.AutomationLoginMapstepDefinations.mapuser_enters_username_and_passsword(AutomationLoginMapstepDefinations.java:45)&#10;&#9;at ✽.Then Mapuser enters username and passsword(map.feature:12)&#10;"><![CDATA[Given Mapuser is already on login page......................................passed
+When Maptitle is "Login - My Store".........................................passed
+Then Mapuser enters username and passsword..................................failed
 Then Mapuser quit...........................................................skipped
 
 StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign out
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'krupals-MacBook-Air.local', ip: 'fe80:0:0:0:40:aec7:e058:b083%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 17.7.0, moz:processID: 16823, moz:profile: /var/folders/p8/fwvt8hpx36d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f04ac45a-746e-4043-b199-4f36f166caf4
+*** Element info: {Using=link text, value=Sign out}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at StepDefinations.AutomationLoginMapstepDefinations.mapuser_enters_username_and_passsword(AutomationLoginMapstepDefinations.java:45)
+	at ✽.Then Mapuser enters username and passsword(map.feature:12)
 ]]></failure>
     </testcase>
-    <testcase classname="Automation LoginMap Feature" name="Automation sign in Test" time="0.002292">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given user is on Sign in page...............................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+    <testcase classname="Automation LoginMap Feature" name="Automation sign in Test" time="19.287068">
+        <system-out><![CDATA[Given user is on Sign in page...............................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Automation LoginMap Feature" name="Automation Home Page Test" time="0.002186">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given user is Home page.....................................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+    <testcase classname="Automation LoginMap Feature" name="Automation Home Page Test" time="9.489656">
+        <system-out><![CDATA[Given user is Home page.....................................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Dresses page Test" name="" time="0.003401">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given ruser is on home page and hometitle is "My account - My Store"........skipped
-Then user clicks on contact page............................................skipped
-Then user enter details.....................................................skipped
-Then user clicks on send button.............................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+    <testcase classname="Dresses page Test" name="" time="11.711583">
+        <system-out><![CDATA[Given ruser is on home page and hometitle is "My account - My Store"........passed
+Then user clicks on contact page............................................passed
+Then user enter details.....................................................passed
+Then user clicks on send button.............................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Dresses page Test" name="" time="0.005466">
-        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)&#10;&#9;at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)&#10;&#9;at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;"><![CDATA[Given duser is on dresses page and title is "Dresses - My Store"............skipped
-Then user clicks on casual dresses..........................................skipped
-Then user checked the any size checkbox.....................................skipped
-
-StackTrace:
-java.lang.IllegalStateException: The driver executable does not exist: /Users/rjghori/SeleniumJars/geckodriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at StepDefinations.TaggedHookStepDefination.setUp(TaggedHookStepDefination.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-]]></failure>
+    <testcase classname="Dresses page Test" name="" time="17.030991">
+        <system-out><![CDATA[Given duser is on dresses page and title is "Dresses - My Store"............passed
+Then user clicks on casual dresses..........................................passed
+Then user checked the any size checkbox.....................................passed
+]]></system-out>
     </testcase>
 </testsuite>

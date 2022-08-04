@@ -1,13 +1,11 @@
 package StepDefinations;
 
-import java.util.List;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.DataTable;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,9 +15,8 @@ public class AutomationLoginStepDefinations {
 	
 	@Given("^user is already on login page$")
 	public void user_is_already_on_login_page(){
-		System.setProperty("webdriver.chrome.driver", "/Users/rjghori/SeleniumJars/chromedriver");
-		driver=new ChromeDriver();
-		
+		System.setProperty("webdriver.gecko.driver", "/Users/krupalpatel/Desktop/SeleniumJars/geckodriver");
+		driver = new FirefoxDriver(); 
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 	    driver.manage().window().maximize();
 	}

@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -20,8 +21,8 @@ public class TaggedHookStepDefination {
 	
 	@Before
 	public void setUp() {
-		System.setProperty("webdriver.gecko.driver", "/Users/rjghori/SeleniumJars/geckodriver");
-		driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/Users/krupalpatel/Desktop/SeleniumJars/geckodriver");
+		driver = new FirefoxDriver(); 
 		
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 	    driver.manage().window().maximize();

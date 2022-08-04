@@ -5,7 +5,8 @@ import java.util.Map;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -18,8 +19,8 @@ public class AutomationLoginMapstepDefinations {
 	
 	@Given("^Mapuser is already on login page$")
 	public void mapuser_is_already_on_login_page(){
-		System.setProperty("webdriver.chrome.driver", "/Users/rjghori/SeleniumJars/chromedriver");
-		driver=new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "/Users/krupalpatel/Desktop/SeleniumJars/geckodriver");
+		driver = new FirefoxDriver(); 
 		
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 	    driver.manage().window().maximize();
