@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"/Users/rjghori/eclipse-workspace/AutomationCucumberProject/src/main/java/features/taggedHook.feature"},//the path of the feature files
+		features = {"/Users/krupalpatel/Desktop/Workspace2/AutomationCucmberProject/src/main/java/features"},//the path of the feature files
 		glue={"StepDefinations"},//the path of the step definition files
 		plugin= {"pretty", "html:test-output" ,"json:json-output/test.json" ,"junit:xml-outout/test.xml"},
 		//format= {},

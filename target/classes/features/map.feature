@@ -11,7 +11,7 @@ Feature: Automation LoginMap Feature
     When Maptitle is "Login - My Store"
     Then Mapuser enters username and passsword
     |username                  |password|
-    | rmanharbhaj@thebrick.com | Ridje123 | 
+    | kpatel@thebrick.com | 2098found | 
     | rj123@gmail.com          | rj123    |
     
 		Then Mapuser quit
